@@ -4,12 +4,12 @@ using namespace std;
 
 int removeElement(vector<int>& nums, int val) {
   int point = 0;
-  for (int i = 0; i < nums.size(); i++){
-      if (nums[i] == val){
-          continue;
-      }
-      
-      nums[point++] = nums[i];
+  for (int i = 0; i < nums.size(); i++) {
+    if (nums[i] == val) {
+      continue;
+    }
+
+    nums[point++] = nums[i];
   }
   return point;
 }
@@ -23,7 +23,7 @@ int main() {
   cout << "新的陣列長度：" << newLength << endl;
   cout << "新的陣列內容（前" << newLength << "個元素）：" << endl;
   for (int i = 0; i < newLength; i++) {
-      cout << nums[i] << " ";
+    cout << nums[i] << " ";
   }
   cout << endl;
 
